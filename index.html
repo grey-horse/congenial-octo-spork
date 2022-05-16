@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en, zh">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>davidmorton.eth</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/favicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   <script src="https://kit.fontawesome.com/593f176b66.js" crossorigin="anonymous"></script>
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <script type="module" src="js/map.js"></script>
+   <script src="js/script.js"></script>
+</head>
+<!-- body -->
+<body class="main-layout">
+   <section>
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- top -->
+      <!-- header -->
+      <header class="header-area">
+         <div class="ticker-wrap">
+            <div lang="en" class="ticker">
+               <div class="ticker__item">If you're a recruiter or employer please read the website or download my CV
+               </div>
+               <div class="ticker__item">If you are a casual visitor consider investing in DaveCoin -- Dave uses a
+                  percentage of his income to buyback and burn the token each month</div>
+               <div class="ticker__item">Join the community and chat about DaveCoin</div>
+               <div class="ticker__item">Click on the button to find out more ----> </div>
+               <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+               <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+            </div>
+            <div lang="zh" class="ticker">
+               <div class="ticker__item">如果您是招聘人员或雇主請讀我的網頁或下載我的履歷</div>
+               <div class="ticker__item">如果你只是一般大眾我歡迎你投資 DaveCoin -- Dave 會利用他的薪水的一部分回购销毁 DaveCoin</div>
+               <div class="ticker__item">歡迎你參加我們的社區</div>
+               <div class="ticker__item">按右邊的按鍵查看更多 ----> </div>
+               <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+               <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+            </div>
+         </div>
+         <div class="left">
+            <a href="Javascript:void(0)"><i class="fas fa-language" id="switch-lang" aria-hidden="true"
+                  data-toggle="tooltip" data-placement="bottom" title="Select Language"></i></a>
+         </div>
+         <div class="right">
+            <a href="Javascript:void(0)"><i lang="en" class="fa fa-user" aria-hidden="true" data-toggle="tooltip"
+                  data-placement="bottom" title="Get DaveCoin"></i><i lang="zh" class="fa fa-user" aria-hidden="true"
+                  data-toggle="tooltip" data-placement="bottom" title="獲得 DaveCoin"></i></a>
+         </div>
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-sm-3 logo_sm">
+                  <div class="logo">
+                     <a href="index.html"></a>
+                  </div>
+               </div>
+               <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-9">
+                  <div class="navbar-area">
+                     <nav class="site-navbar">
+                        <button class="nav-toggler">
+                           <span></span>
+                        </button>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header -->
+      <div class="full_bg">
+         <canvas id="canvas"></canvas>
+         <!-- partial:index.partial.html -->
+         <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+         <!-- partial -->
+         <!-- header inner -->
+         <!-- carousel code -->
+         <div id="banner1" class="carousel slide slider_main">
+            <ol class="carousel-indicators ">
+               <li data-target="#banner1" data-slide-to="0" class="indicator-li-1">01</li>
+               <li data-target="#banner1" data-slide-to="1" class="">02</li>
+               <li data-target="#banner1" data-slide-to="2" class="active">03</li>
+            </ol>
+            <div class="carousel-inner">
+               <!-- first slide -->
+               <div class="carousel-item active">
+                  <div class="carousel-caption cuplle">
+                     <div class="container" id="top">
+                        <div class="row">
+                           <div class="col-md-8">
+                              <div class="photog">
+                                 <div class="units">
+                                    <div>davidmorton.eth</div>
+                                    <div>davidmorton.eth</div>
+                                 </div>
+                                 <form lang="en" onsubmit="this.action = document.getElementById('CV').value">
+                                    <input type="submit" value="Download CV" class="read_more" download>
+                                    <select class="read_more" id="CV">
+                                       <option lang="en" selected disabled value="downloads/e-ticket.pdf" target="blank"
+                                          download>
+                                          File Type</option>
+                                       <option value="downloads/e-ticket.pdf" target="blank" download>.pdf</option>
+                                       <option value="downloads/white paper111.docx">.docx</option>
+                                    </select>
+                                 </form>
+                                 <form lang="zh" onsubmit="this.action = document.getElementById('CV2').value">
+                                    <input type="submit" value="下載履歷" class="read_more" download>
+                                    <select class="read_more" id="CV2">
+                                       <option lang="zh" selected disabled value="downloads/e-ticket.pdf" target="blank"
+                                          download>
+                                          文件類型</option>
+                                       <option value="downloads/e-ticket.pdf" target="blank" download>.pdf</option>
+                                       <option value="downloads/white paper111.docx">.docx</option>
+                                    </select>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- second slide -->
+               <div class="carousel-item">
+                  <div class="carousel-caption cuplle">
+                     <div class="container" id="top">
+                        <div class="row">
+                           <div class="col-md-8">
+                              <div class="photog">
+                                 <div class="units">
+                                    <div lang="en">Taiwan or remote</div>
+                                    <div lang="en">Taiwan or remote</div>
+                                 </div>
+                                 <div class="units">
+                                    <div lang="zh">尋找遠程或台灣的工作</div>
+                                    <div lang="zh">尋找遠程或台灣的工作</div>
+                                 </div>
+                                 <a lang="en" class="read_more" href="#about">Read More</a>
+                                 <a lang="zh" class="read_more" href="#about">更多</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- third slide -->
+               <div class="carousel-item">
+                  <div class="carousel-caption cuplle">
+                     <div class="container" id="top">
+                        <div class="row">
+                           <div class="col-md-8">
+                              <div class="photog">
+                                 <h3 lang="en" class="hover-4">Crypto focused</h3>
+                                 <h3 lang="zh" class="hover-4">專注加密貨幣企業</h3>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- controls -->
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+               <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+               <span class="sr-only">Next</span>
+            </a>
+         </div>
+         <div class="full_bg1"></div>
+   </section>
+   <!-- end banner -->
+   <!-- about -->
+   <section id="about" style="scroll-margin-top: 140px;">
+      <div class="about">
+         <div class="container_width">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="titlepage text_align_left">
+                     <h2 lang="en">Available for hire</h2>
+                     <h2 lang="zh">Available for hire</h2>
+                     <p lang="en">Put various parts of your business operations in Dave's capable hands for a modest
+                        monthly fee. David is located in Taiwan and is currently looking for remote employment or
+                        employment based here in Taiwan. If you're looking for a skilled employee who is also willing to
+                        learn new things, Dave would be the perfect choice of person to hire.
+                     </p>
+                     <p lang="zh">Put various parts of your business operations in Dave's capable hands for a modest
+                        monthly fee. David is located in Taiwan and is currently looking for remote employment or
+                        employment based here in Taiwan. If you're looking for a skilled employee who is also willing to
+                        learn new things, Dave would be the perfect choice of person to hire.
+                     </p>
+                     <h2 lang="en">Legally compliant</h2>
+                     <h2 lang="zh">Legally compliant</h2>
+                     <p lang="en">Dave is vaccinated up to minimum legal requirements and holds a British passport which
+                        allows visa free travel to many locations globally. Dave can be anywhere and go anywhere at a
+                        moments notice.</p>
+                     <p lang="zh">Dave is vaccinated up to minimum legal requirements and holds a British passport which
+                        allows visa free travel to many locations globally. Dave can be anywhere and go anywhere at a
+                        moments notice.</p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img text_align_left">
+                     <figure>
+                        <h2 lang="en">Daves current location</h2>
+                        <h2 lang="zh">Dave 的當前位置</h2>
+                        <div id="map"></div>
+                        <!-- 
+                         The `defer` attribute causes the callback to execute after the full HTML
+                         document has been parsed. For non-blocking uses, avoiding race conditions,
+                         and consistent behavior across browsers, consider loading using Promises
+                         with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+                        -->
+                        <script
+                           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_MrpX85obMpsk_eEdfE-iPIt06qbHyt0&callback=initMap&v=weekly"
+                           defer></script>
+                        <p lang="en">Dave has been living in Taiwan for the past 3 years, And in Yuanlin for the past
+                           year.
+                           location updated monthly.
+                        </p>
+                        <p lang="zh">Dave 目前為止住在台灣三年了，從去年開始住在員林市。</p>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="arrowdiv" href="#friends">
+         <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+         </svg>
+      </a>
+   </section>
+
+   <!-- end about -->
+   <!-- coronata -->
+   <section>
+      <div class="coronata">
+         <div class="container" id="friends">
+            <div class="row d_flex grid">
+               <div class="col-md-7">
+                  <div class="coronata_img text_align_center">
+                     <figure><img src="images/davecz.png" alt="#" /></figure>
+                  </div>
+               </div>
+               <div class="col-md-5 oder1">
+                  <div class="titlepage text_align_left">
+                     <h2 lang="en">Good friends with CZ </h2>
+                     <p lang="en">In this inflationary macroeconomic environment it's more important than ever to have
+                        friends in high places. Dave is personal friends with lots of important people, and regularly
+                        receives email correspondence from African Royalty!
+                     </p>
+                     <h2 lang="zh">CZ 的好朋友 </h2>
+                     <p lang="zh">nihao</p>
+                     <a lang="en" class="popup" href="#skills">Click me!</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- end coronata -->
+
+   <!-- protect -->
+   <section>
+      <div class="protect">
+         <div class="container" id="skills">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2 lang="en">Lots of skills</h2>
+                     <h2 lang="zh">多樣技術</h2>
+                     <p>A non-exhaustive list of Dave's skillset</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="protect_bg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <!--  Demos -->
+                     <div class="owl-carousel owl-theme">
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <i><img src="images/pro1.png" alt="#" /></i>
+                                 <h3> CSS + HTML + JS</h3>
+                                 <span> The standard toolbox of front-end web development. Dave has mastered the basics
+                                    and
+                                    is applying his knowlege to ever greater challenges.</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <i><img src="images/pro2.png" alt="#" /></i>
+                                 <h3> IPFS + AWS</h3>
+                                 <span> Standard hosting on S3 or lightsail, Lambda functions and route53, or
+                                    decentralized
+                                    hosting using IPFS or Skynet. Dave has the knowhow. </span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <i><img src="images/pro3.png" alt="#" /></i>
+                                 <h3> Chinese (Mandarin)</h3>
+                                 <span> Dave is 100% fluent in Chinese, speaking, reading and writing, able to translate
+                                    and interpret Zh > En. Even this website is in both languages</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <i><img src="images/pro4.png" alt="#" /></i>
+                                 <h3> Solidity </h3>
+                                 <span> The smart contract language of Ethereum and other blockchains. Dave knows how to
+                                    piece together smart contracts, test them and deploy them.</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <i><img src="images/pro5.png" alt="#" /></i>
+                                 <h3> Linux User </h3>
+                                 <span> Dave has used the open source Linux operating system for many years now. (Also
+                                    familiar with windows)</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <i><img src="images/pro6.png" alt="#" /></i>
+                                 <h3> Community </h3>
+                                 <span> Cultivating a lively community for a project is something Dave has experience
+                                    with.
+                                    Managing discords and telegram groups is no problem.</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <i><img src="images/pro7.png" alt="#" /></i>
+                                 <h3> Project Management </h3>
+                                 <span> Managing an online project is something Dave has attempted many times
+                                    succesfully.
+                                    Budgeting, organising volunteers and manpower, Managing tasks through spreadsheets
+                                    etc.
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <i><img src="images/pro8.png" alt="#" /></i>
+                                 <h3> Crypto Mining </h3>
+                                 <span> Mining Bitcoin and Ethereum on a large scale, planning cooling, power supply,
+                                    electrical safety, miner optimisation, maintenance of 1000+ machines.</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="protect_box text_align_center">
+                              <div class="desktop">
+                                 <h3> + More </h3>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <a class="arrowdiv" href="#projects">
+            <svg class="arrows">
+               <path class="a1" d="M0 0 L30 32 L60 0"></path>
+               <path class="a2" d="M0 20 L30 52 L60 20"></path>
+               <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+         </a>
+      </div>
+   </section>
+   <!-- end protect -->
+   <!-- cases -->
+   <section>
+      <div class="cases" id="projects">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>Previous Projects</h2>
+                     <p>Some recent crypto related projects.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="images/cases1.png" alt="#" /></figure>
+                     <div class="nostrud">
+                        <h3>Token Building</h3>
+                        <p>Remix, hardhat and front end development is one thing, community building is another thing
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="images/cases2.png" alt="#" /></figure>
+                     <div class="nostrud">
+                        <h3>Doing Websites</h3>
+                        <p>Remix, hardhat and front end development is one thing, community building is another thing
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="images/cases3.png" alt="#" /></figure>
+                     <div class="nostrud">
+                        <h3>Community Bootstrap</h3>
+                        <p>Building a community is important when you're creating a crypto project. Dave is quite good
+                           at this.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="arrowdiv2" href="#people">
+            <svg class="arrows2">
+               <path class="a1" d="M0 0 L30 32 L60 0"></path>
+               <path class="a2" d="M0 20 L30 52 L60 20"></path>
+               <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+         </a>
+      </div>
+   </section>
+   <!-- end cases -->
+   <!-- doctors -->
+   <section>
+      <div class="doctors">
+         <div class="container" id="people">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>What People say</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-6">
+                  <div id="ho_efcet" class="reader text_align_left">
+                     <i><img src="images/doctor1.png" alt="#" /></i>
+                     <h3>Nigel Hammond</h3>
+                     <p>I've known Dave for nearly 10 years! Dave originally worked for me helping to run a flower
+                        business, I was impressed with his customer skills and attention to detail. We later formed our
+                        own
+                        business doing gardening for local people and the business grew and became well established.
+                        Sadly
+                        Dave had to go his own way to travel which meant we didn't see each other again however I'm
+                        pleased
+                        to say we remained friends to this day.</p>
+                  </div>
+               </div>
+               <div class=" col-md-6">
+                  <div id="ho_efcet" class="reader text_align_left">
+                     <i><img src="images/doctor2.png" alt="#" /></i>
+                     <h3>Dr.Golap den</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="arrowdiv2" href="#contact">
+            <svg class="arrows2">
+               <path class="a1" d="M0 0 L30 32 L60 0"></path>
+               <path class="a2" d="M0 20 L30 52 L60 20"></path>
+               <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+         </a>
+      </div>
+   </section>
+   <!-- end cases -->
+   <!-- update -->
+
+   <!-- update -->
+   <!--  footer -->
+   <section>
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                     <div class="hedingh3 text_align_left">
+                        <h3>Resources</h3>
+                        <ul class="menu_footer">
+                           <li><a href="index.html">Home</a>
+                           <li>
+                           <li><a href="javascript:void(0)">What we do</a>
+                           <li>
+                           <li> <a href="javascript:void(0)">Media</a>
+                           <li>
+                           <li> <a href="javascript:void(0)">Travel Advice</a>
+                           <li>
+                           <li><a href="javascript:void(0)">Protection</a>
+                           <li>
+                           <li><a href="javascript:void(0)">Care</a>
+                           <li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                     <div class="hedingh3 text_align_left">
+                        <h3>About</h3>
+                        <p>Dave's portfolio website was created with vanilla js and hosted on Siacoin Skynet with an
+                           ENSdomain
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                     <div class="hedingh3  text_align_left">
+                        <h3>Contact Us</h3>
+                        <ul class="top_infomation">
+                           <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                              Making this the first true
+                           </li>
+                           <li><i class="fa fa-phone" aria-hidden="true"></i>
+                              Call : +886 909643721
+                           </li>
+                           <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="Javascript:void(0)">david.webpersonal@gmail.com</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="hedingh3 text_align_left">
+                        <h3>countrys</h3>
+                        <div class="map">
+                           <img src="images/map.png" alt="#" />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        <p>© 2022 All Rights Reserved. Designed by Dave</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </section>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.cookie.js"></script>
+   <script src="js/jquery.nice-select.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/custom.js"></script>
+
+
+
+
+</body>
+<script>
+   $('.carousel').on('touchstart', function (event) {
+      const xClick = event.originalEvent.touches[0].pageX;
+      $(this).one('touchmove', function (event) {
+         const xMove = event.originalEvent.touches[0].pageX;
+         const sensitivityInPx = 5;
+
+         if (Math.floor(xClick - xMove) > sensitivityInPx) {
+            $(this).carousel('next');
+         } else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+            $(this).carousel('prev');
+         }
+      });
+      $(this).on('touchend', function () {
+         $(this).off('touchmove');
+      });
+   });
+</script>
+
+</html>
