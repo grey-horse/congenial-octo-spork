@@ -13,13 +13,71 @@ File Name: responsive.css
 @media (min-width: 1200px) and (max-width: 1342px) {
 
     .full_bg {
-        height: 100%;
+        height: 61vh;
+    }
+    .full_bg1 {
+        height: 30vh;
     }
 
     .latest .read_more {
         top: 19%;
     }
 
+    .titlepage h2 {
+        
+        font-size: 30px;
+        
+        line-height: 30px;
+        font-weight: bold;
+        padding: 0;
+        
+    }
+    .about .titlepage p {
+        padding-bottom: 5px;
+        line-height: 15px;
+    }
+    #map {
+        height: 300px;
+        width: 100%;
+    }
+    p {
+        margin: 0px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .protect {
+        padding: 0 230px;
+        padding-top: 30px;
+        
+    }
+    .arrowdiv2 {
+       
+        padding-top: 30px;
+        
+    }
+    .titlepage {
+        
+        padding-bottom: 30px;
+    }
+    .cases {
+        
+        padding: 0 100px 0 100px;
+        padding-top: 40px;
+        
+    }
+    .latest figure {
+        
+        height: 12em;
+    }
+    .arrowdiv4 {
+       
+        padding-top: 30px;
+        
+    }
+    .units {
+        height:20vh;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -28,7 +86,17 @@ File Name: responsive.css
     }
 
     .full_bg {
-        height: 100%;
+        height: 71vh;
+    }
+    .full_bg1 {
+        height: 20vh;
+    }
+    #banner1 .carousel-control-prev,
+    #banner1 .carousel-control-next {
+        display:none;
+    }
+    .units {
+        height:20vh;
     }
 
     .photog h1 {
@@ -54,13 +122,102 @@ File Name: responsive.css
     ul.top_infomation li {
         font-size: 15px;
     }
+    .titlepage h2 {
+        
+        font-size: 19px;
+        
+        line-height: 19px;
+        font-weight: bold;
+        padding: 0;
+        
+    }
+    .about .titlepage p {
+        padding-bottom: 5px;
+        line-height: 14px;
+    }
+    #map {
+        height: 250px;
+        width: 100%;
+    }
+    p {
+        margin: 0px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    #friends {
+        padding-left: 60px;
+    }
+    .arrowdiv {
+        margin-left:75px;
+    }
+    .protect {
+        padding: 0 100px;
+        padding-top: 15px;
+        
+    }
+    .titlepage {
+        
+        padding-bottom: 10px;
+    }
+    .arrowdiv2 {
+        margin-left:75px;
+        padding-top: 20px;
+    }
+    .protect_bg {
+       
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .cases {
+        
+        padding: 0 30px 0 30px;
+        padding-top: 10px;
+        height: 100vh;
+    }
+    .latest figure {
+        
+        height: 12em;
+    }
+    .arrowdiv3 {
+        margin-left:75px;
+        padding-top: 0px;
+    }
+    .nostrud h3 {
+        
+        font-size: 20px;
+        line-height: 20px;
+        
+    }
+    .cases .titlepage {
+        padding-bottom: 20px;
+    }
+    .reader {
+        margin-top: 21px;
+        background: #fff;
+        padding: 0px 30px 30px 30px;
+        height: 28em;
+        border-radius: 10px;
+        transition: ease-in all 0.5s;
+        margin-bottom: 0px;
+    }
+    .arrowdiv3 {
+        margin-left:75px;
+        padding-top: 10px;
+    }
+    .arrowdiv4 {
+        margin-left:75px;
+        padding-top: 10px;
+    }
+    .arrowdiv5 {
+        margin-left:75px;
+        
+    }
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .right {
-        display: none;
-    }
+   
 
     .site-navbar ul li {
         padding-right: 32px;
@@ -71,7 +228,31 @@ File Name: responsive.css
     }
 
     .full_bg {
-        height: 100%;
+        height: 71vh;
+    }
+    .full_bg1 {
+        height: 20vh;
+    }
+    #banner1 .carousel-control-prev,
+    #banner1 .carousel-control-next {
+        display:none;
+    }
+    #top>div>div>div>h3:nth-child(1) {
+        margin-right: 85px;
+    }
+
+    .about {
+        margin: 0 10px;
+        padding: 20px 20px;
+        margin-top: -90px;
+        width: 90%;
+        height: 90%;
+    }
+    .protect {
+        padding: 0 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #F9F871;
     }
 
 
@@ -123,9 +304,18 @@ File Name: responsive.css
     .latest {
         padding: 15px 15px 0px 15px;
     }
+    .latest figure {
+        margin: 0;
+        height: 9em;
+    }
 
     .latest .read_more {
         top: 12%;
+    }
+    .reader {
+        
+        height: 37em;
+       
     }
 
     #banner1 .carousel-control-prev,
@@ -285,24 +475,60 @@ File Name: responsive.css
 }
 
 @media (max-width: 575px) {
+    .units>* {
+        font-size: 1.5rem;
+    }
+    .units> :last-child {
+        transform: rotatex(180deg) translatey(25px);
+    }
+    #top>div>div>div>div:nth-child(2)>div:nth-child(2) {
+        transform: rotatex(180deg) translatey(19px);
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    #top>div>div>div>h3:nth-child(1) {
+        margin-right: 30px
+    }
+    .full_bg {
+        height: 80vh;
+    }
+    .full_bg1 {
+        height: 14vh;
+    }
+    #banner1 .carousel-control-prev,
+    #banner1 .carousel-control-next {
+        display:none;
+    }
+    #canvas {
+        display: none;
+    }
+
+    #top>div>div>div>h3:nth-child(1) {
+        margin-right: 46px;
+    }
+    #top > div > div > div > h3:nth-child(2) {
+        margin-right: 26px;
+    }
+    
     .header-area {
         padding: 0px 0px;
     }
 
-    .right {
-        display: none;
+   
+    .carousel-inner {
+        height: 78vh;
     }
-
+    
+  
     .logo_sm {
         display: inherit;
     }
 
-    .full_bg {
-        height: 100%;
-    }
+    
 
     .latest figure {
-        height: 15em;
+        height: 7em;
     }
 
     .desktop {
@@ -330,7 +556,7 @@ File Name: responsive.css
     }
 
     .slider_main {
-        padding-top: 27%;
+        padding-top: 10%;
     }
 
     .photog .read_more {
@@ -343,29 +569,87 @@ File Name: responsive.css
         line-height: 51px;
     }
 
-    .about_img,
-    .coronata_img {
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 30px;
+    #section1 {
+        background: #f9f871;
+        height: 95vh
     }
 
     .about {
-        padding: 80px 10px;
+       
+        padding: 10px 10px;
         position: relative;
+        width: 95%;
+        box-shadow: 3px 0 62px rgb(13 3 3 / 18%);
+        border-radius: 25px;
+        margin-top: -15px;
+        color: white;
+        height: 98%;
+        display: flex;
+        justify-content: center;
+    }
+    .about .titlepage p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        color: #white;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .coronata_img figure {
+       
+        border-radius: 10px;
+        max-width: 70%;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    #map {
+        height: 230px;
+        width: 100%;
+    }
+    p {
         margin: 0px;
-        margin-top: -70px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .arrowdiv {
+        
+        display: none;
+    }
+    .coronata .titlepage {
+        width: 70%;
+        margin: auto;
+        
+    }
+    .coronata .titlepage p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #111111;
+        padding: 20px 0px 20px 0px;
+    }
+    .protect {
+        padding: 0 10px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+    .protect_bg {
+        border-radius: 25px;
     }
 
     .latest {
-        max-width: 425px;
+        max-width: 275px;
         margin: 0 auto;
-        margin-bottom: 60px;
+        margin-bottom: 9px;
+        padding: 5px 5px 0px 5px;
     }
-
+    .cases .titlepage p {
+        display: none;
+    }
     .cases {
         padding: 0;
-        padding-top: 70px;
+        padding-top: 10px;
     }
 
     .owl-prev {
@@ -381,12 +665,89 @@ File Name: responsive.css
     }
 
     .nostrud h3 {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 14px;
+        padding-top:7vh;
+    }
+    .nostrud p {
+        display:none;
+    }
+    .cases .titlepage {
+        padding-bottom: 0px;
+    }
+    .nostrud::before {
+        display: none;
+    }
+    .nostrud {
+        height: 11vh;
+    }
+    .titlepage {
+        
+        padding-bottom: 10px;
+    }
+    .reader {
+        margin-top: 4px;
+        padding: 0px 15px 15px 15px;
+        height: 20em;
+        margin-bottom: 0px;
+    }
+    .arrowdiv2 {
+        
+        padding-top: 30px;
+        
+    }
+    .reader i img {
+        margin-top: 10px;
+    }
+    .reader p {
+        padding: 0px 0 0px 0;
+        color: #0f100d;
+        line-height: 14px;
+        font-weight: normal;
+        font-size: 14;
+    }
+    .reader h3 {
+       
+        font-size: 16px;
+        line-height: 17px;
+        margin-top: 4px;
+        padding-top: 1px;
+       
+    }
+    .arrowdiv4 {
+        
+        display: none;
+      
+    }
+    .footer {
+        padding-top: 0px;
+    }
+    #section6 > footer > div > div.container > div > div.col-lg-4.col-md-6.col-sm-6 {
+        display: none;
+    }
+    .copyright {
+        margin-top: 0px;
+    }
+    .arrowdiv5 {
+      
+       display: none;
+       
+    }
+    .copyright p {
+       
+        padding-top: 10px;
+        
+        font-size: 14px;
+        line-height: 18px;
+        
     }
 
+    .arrowdiv3 {
+        display: none;
+    }
     .doctors {
         background: #040d18;
+        padding-top: 10px;
     }
 
     .grid {
@@ -394,12 +755,13 @@ File Name: responsive.css
     }
 
     .oder1 {
-        order: -1;
+        order: 1;
+    
     }
 
     .titlepage h2 {
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: 17px;
     }
 
     .d_none {
@@ -524,4 +886,115 @@ File Name: responsive.css
         font-size: 15pt;
     }
 
+
+}
+@media (min-width: 320px) and (max-width: 374px) {
+    .titlepage h2 {
+        font-size: 14px;
+        line-height: 14px;
+        
+    }
+    .about .titlepage h2::before {
+       
+        height: 4px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+    }
+    .about .titlepage h2 {
+       
+        
+        padding-bottom: 5px;
+       
+    }
+    .about h2 {
+        font-size: 14px;
+    }
+    .about .titlepage p {
+        
+        font-size: 13px;
+        line-height: 13px;
+        
+        padding: 0px 0px 3px 0px;
+    }
+    .about {
+        padding: 4px 4px;
+        position: relative;
+        width: 98%;
+        
+        border-radius: 10px;
+        margin-top: -15px;
+        color: white;
+        height: 99%;
+        display: flex;
+        justify-content: center;
+    }
+    #map {
+        height: 100px;
+        width: 100%;
+    }
+    .coronata_img figure {
+        border-radius: 10px;
+        max-width: 60%;
+    }
+    .coronata .titlepage p {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 14px;
+        color: #111111;
+        padding: 10px 0px 10px 0px;
+    }
+    .arrowdiv2 {
+        display: none;
+    }
+    .protect .titlepage p {
+        display: none;
+    }
+    .protect {
+        padding: 0 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .titlepage {
+        padding-bottom: 3px;
+    }
+    .protect_box h3 {
+        
+        padding-top: 0px;
+      
+    }
+    p {
+        font-size: 11px;
+    }
+    .reader i img {
+        margin-top: -11px;
+        width:12%;
+        height: auto;
+    }
+    .reader {
+       
+        height: 13em;
+       
+    }
+    ul.menu_footer li a {
+        
+        font-size: 14px;
+        line-height: 14px;
+        padding-bottom: 5px;
+        
+    }
+    .hedingh3 {
+        padding-bottom: 0px;
+    }
+    ul.top_infomation li {
+       
+        font-size: 14px;
+       
+    }
+    .hedingh3 h3 {
+      
+        font-size: 15px;
+        padding-bottom: 15px;
+        line-height: 15px;
+        
+    }
 }
