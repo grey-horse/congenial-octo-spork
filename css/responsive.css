@@ -334,7 +334,7 @@ File Name: responsive.css
     }
 
     .right {
-        display: none;
+        
     }
 
     .logo_sm {
@@ -514,7 +514,19 @@ File Name: responsive.css
     .header-area {
         padding: 0px 0px;
     }
-
+    .right {
+        position: absolute;
+        background: #00132b;
+        width: 3rem;
+        right: 0;
+        height: 3rem;
+        top: 0;
+        text-align: center;
+        line-height: 50px;
+    }
+    .right a i {
+        font-size: 15pt;
+    }
    
     .carousel-inner {
         height: 78vh;

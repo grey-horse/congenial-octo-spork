@@ -161,8 +161,8 @@ $(function () {
   ///// Language Switching (2 languages: English and Chinese). /////
 
   // Initially disable language switching button.
-  $('#switch-lang').css({'pointer-events':'none',
-   'cursor':'default'}).attr('disabled','disabled');
+  
+  
 
   function langButtonListen() {
     $('#switch-lang').on("click", function (event) {
